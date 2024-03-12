@@ -64,4 +64,15 @@ nav {
   .nav-middle .search-box input{
     width: 100px;
   }
+  
 }
+
+@media (max-width:370px){
+  .search-box input{
+    display: none;
+  }
+  .logo{
+    width: 50px;
+  }
+}
+

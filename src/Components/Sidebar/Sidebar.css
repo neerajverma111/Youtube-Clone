@@ -56,8 +56,15 @@
     padding-bottom: 2px;
     border-bottom: 3px solid red;
 }
-@media (max-width:900px) {
+@media (max-width:1107px) {
     .sidebar{
+        width: 20px ;
+    }
+
+    .side-link p{
+        display: none;
+    }
+    .subscribed-list h3{
         display: none;
     }
 }

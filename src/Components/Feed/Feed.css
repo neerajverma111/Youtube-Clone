@@ -28,3 +28,16 @@
 .card p{
     font-size: 14px;
 }
+@media (max-width:950px) {
+    .feed {
+        margin-left: 40px;
+    }
+   
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }

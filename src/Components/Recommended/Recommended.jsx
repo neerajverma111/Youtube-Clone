@@ -49,7 +49,7 @@ const Recommended = ({ categoryId }) => {
           <Link to={`/video/${item.snippet.categoryId}/${item.id}`} key={index} className="side-video-list">
             <img src={item.snippet.thumbnails.medium.url} alt="" />
             <div className="vid-info">
-              <h4>{item.snippet.title}</h4>
+              <h4 className="line-clamp">{item.snippet.title}</h4>
               <p>{item.snippet.channelTitle}</p>
               <p>{value_converter(item.statistics.viewCount)}</p>
             </div>

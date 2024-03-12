@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { API_KEY, value_converter } from "../../data";
 import { useEffect, useState } from "react";
 import moment from "moment";
+// eslint-disable-next-line react/prop-types
 const Feed = ({ category }) => {
   const [data, setData] = useState([]);
 
@@ -20,11 +21,11 @@ const Feed = ({ category }) => {
 
   return (
     <div className="feed">
-      {data.map((item, index) => {
+      {data.map((item) => {
         return (
           <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="card">
                <img src={item.snippet.thumbnails.medium.url} alt="" />
-            <h2>
+            <h2 className="line-clamp">
               {item.snippet.title}
             </h2>
             <h3>{item.snippet.channelTitle}</h3>
